@@ -5,8 +5,8 @@
 
 
     session_start();
-    if (empty($_SESSION["user_max_number"])) {
-        $_SESSION["user_max_number"] = 0;
+    if (empty($_SESSION["test_results"])) {
+        $_SESSION["test_results"] = array();
     }
 
     $app = new Silex\Application();
