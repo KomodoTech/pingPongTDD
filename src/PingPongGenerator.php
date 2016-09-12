@@ -6,7 +6,7 @@
 
         function __construct($ping_pong_array = array()) {
             print("constructed");
-            $this->$current_ping_pong_array = $ping_pong_array;
+            $this->current_ping_pong_array = $ping_pong_array;
         }
 
 
@@ -19,7 +19,8 @@
         }
 
         function addElementToCurrentPingPongArray($element) {
-            array_push($this->getCurrentPingPongArray(), $element);
+            $current_array = $this->getCurrentPingPongArray();
+            array_push($current_array, $element);
         }
 
 
